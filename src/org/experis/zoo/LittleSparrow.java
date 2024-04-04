@@ -7,10 +7,10 @@ public class LittleSparrow extends Animal {
 
     @Override
     public void makeNoise() {
-
+        System.out.println("chip-chip");
     }
     @Override
     public void eat() {
-
+        System.out.println("Sono " + super.getName() + " e mangio semi ed insetti");
     }
 }

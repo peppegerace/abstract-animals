@@ -7,11 +7,11 @@ public class Dolphin extends Animal{
 
     @Override
     public void makeNoise() {
-
+        System.out.println("eee-oww-eee");
     }
 
     @Override
     public void eat() {
-
+        System.out.println("Sono " + super.getName() + " e mangio pesci e molluschi");
     }
 }
