@@ -1,6 +1,6 @@
 package org.experis.zoo;
 
-public class LittleSparrow extends Animal {
+public class LittleSparrow extends Animal implements CanFly{
     public LittleSparrow(String name) {
         super(name);
     }
@@ -12,5 +12,10 @@ public class LittleSparrow extends Animal {
     @Override
     public void eat() {
         System.out.println("Sono " + super.getName() + " e mangio semi ed insetti");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("Sto volando!!!");
     }
 }

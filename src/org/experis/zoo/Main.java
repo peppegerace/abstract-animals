@@ -8,7 +8,21 @@ public class Main {
             animal.makeNoise();
             animal.sleep();
             animal.eat();
-            System.out.println("---------");
+            if (animal instanceof CanFly) {
+                faiVolare((CanFly) animal);
+            }
+            if (animal instanceof CanSwim) {
+                faiNuotare((CanSwim) animal);
+            }
+            System.out.println("----------");
+
         }
+    }
+    public static void faiVolare(CanFly animale) {
+        animale.fly();
+    }
+
+    public static void faiNuotare(CanSwim animale) {
+        animale.swim();
     }
 }
